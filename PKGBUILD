@@ -30,5 +30,6 @@ package() {
 
 	rm -R ./node/
 	chmod o+w optimize/
+	chown -R nobody:elasticsearch optimize/
 	cp -Rp * "${pkgdir}"/usr/lib/kibana/
 }
