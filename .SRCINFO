@@ -1,19 +1,18 @@
 pkgbase = kibana4
 	pkgdesc = browser based analytics and search dashboard for Elasticsearch. Please note; this package replaces the distributed precompiled binary 'node' (this is a fork from kibana which is on v5)
-	pkgver = 4.6.4
+	pkgver = 4.6.6
 	pkgrel = 1
 	url = https://www.elastic.co/products/kibana
 	arch = any
 	license = apache
 	depends = nodejs
-	optdepends = elasticsearch>=2.4
-	conflicts = kibana
+	optdepends = elasticsearch2
 	options = !strip
-	backup = etc/elasticsearch/kibana/kibana.yml
-	source = https://download.elasticsearch.org/kibana/kibana/kibana-4.6.4-linux-x86_64.tar.gz
-	source = kibana.service
-	sha256sums = 05699ab7810d1291d555b429081e0299575270e0eb06491af44ba76b355acead
-	sha256sums = SKIP
+	backup = etc/kibana4/kibana.yml
+	source = https://download.elasticsearch.org/kibana/kibana/kibana-4.6.6-linux-x86_64.tar.gz
+	source = kibana4.service
+	sha256sums = 8c3c1808349ac9645836cae35c5570a53091b44b2212c0826907efae1a865d17
+	sha256sums = 4e72c505be26c044693227cc0849c6a3d7005815b7885fec3b63c5d1421bca95
 
 pkgname = kibana4
 
